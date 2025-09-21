@@ -20,10 +20,10 @@ const Header = () => {
     <header className="header-container">
       <div className="header-left">
         <FaRegListAlt
-          className="header-icon"
+          className="nav-item"
           onClick={() => dispatch(toggleNav())}
         />
-        <FaRegStar className="header-icon" />
+        <FaRegStar className="nav-item" />
         <span className="nav-item">Dashboards</span>
         <span className="nav-item">/</span>
         <span className="nav-item active">Default</span>
