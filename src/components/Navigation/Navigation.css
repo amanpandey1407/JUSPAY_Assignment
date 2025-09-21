@@ -1,0 +1,100 @@
+/* Navigation.css */
+
+.navigation-sidebar-container {
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  max-height: 100vh;
+  scrollbar-width: none;
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.user-info {
+  color: var(--color-text-primary);
+}
+.section-title {
+  color: var(--color-text-secondary);
+}
+.favorites-tabs {
+  color: var(--color-text-secondary);
+  display: flex;
+  gap: 16px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.list-item:hover {
+  background-color: var(--color-bg-primary);
+}
+
+.list-icon {
+  margin-right: 10px;
+  color: var(--color-text-primary);
+  transition: color 0.2s;
+}
+
+.list-arrow-left {
+  margin-right: 10px;
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  transition: transform 0.2s ease-in-out;
+}
+
+.list-arrow-left.open {
+  transform: rotate(90deg);
+}
+
+.active-item {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-weight: 600;
+  border-left: 3px solid var(--color-text-primary);
+  border-radius: 0 5px 5px 0;
+}
+
+.active-item .list-icon {
+  color: var(--color-text-primary);
+}
+
+.sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.sub-menu.open {
+  max-height: 500px;
+}
+
+.sub-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-item {
+  padding-left: 50px;
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+}

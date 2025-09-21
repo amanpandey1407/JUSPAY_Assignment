@@ -1,0 +1,78 @@
+/* General Layout and Typography */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dashboard-container {
+  padding: 24px;
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-title {
+  font-size: var(--font-size-lg);
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.top-section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1024px) {
+  .top-section-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.stat-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .stat-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.main-content-grid,
+.bottom-content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1024px) {
+  .main-content-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .bottom-content-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.stat-card,
+.chart-card {
+  background-color: var(--color-bg-primary);
+  border-radius: 12px;
+  box-shadow: var(--color-box-shadow);
+  padding: 24px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}

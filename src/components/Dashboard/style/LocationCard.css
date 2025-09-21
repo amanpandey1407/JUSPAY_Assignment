@@ -1,0 +1,54 @@
+/* LocationCard.css */
+
+.location-card {
+  padding: 24px;
+}
+
+.chart-title {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.world-map-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  margin-bottom: 20px;
+}
+
+.world-map-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.location-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.location-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+}
+
+.location-list li:last-child {
+  border-bottom: none;
+}
+
+.location-city {
+  color: var(--color-text-tertiary);
+}
+
+.location-value {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}

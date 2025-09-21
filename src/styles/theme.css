@@ -1,0 +1,49 @@
+/* theme.css */
+
+body,
+.theme-light {
+  --color-bg-primary: #f7f9fb;
+  --color-surface: #ffffff;
+  --color-text-primary: #1c1c1c;
+  --color-text-secondary: #a4a4a4;
+  --color-text-tertiary: #4b5563;
+  --color-border: #f4f4f4;
+  --color-chart-grid: #e5e7eb;
+  --color-chart-line-current: #5b86e5;
+  --color-chart-line-previous: #d1d5db;
+  --color-change-positive: #10b981;
+  --color-change-negative: #ef4444;
+
+  --color-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark {
+  --color-bg-primary: #272727;
+  --color-surface: #1c1c1c;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #9ca3af;
+  --color-text-tertiary: #d1d5db;
+  --color-border: #374151;
+  --color-chart-grid: #374151;
+  --color-chart-line-current: #c6c7f8;
+  --color-chart-line-previous: #a8c5da;
+  --color-change-positive: #34d399;
+  --color-change-negative: #f87171;
+  --color-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2),
+    0 2px 4px -2px rgba(0, 0, 0, 0.2);
+}
+
+:root {
+  --font-size-xl: 1.6rem;
+  --font-size-lg: 1.1rem;
+  --font-size-md: 14px;
+  --font-size-sm: 12px;
+  --font-size-xs: 0.8rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}

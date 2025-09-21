@@ -1,0 +1,102 @@
+/* LineChartCard.css */
+
+.chart-header {
+  display: flex;
+  align-items: center;
+}
+
+.chart-title {
+  font-size: var(--font-size-md);
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.chart-legend-center {
+  margin-left: 10px;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 16px;
+  font-size: var(--font-size-sm);
+  line-height: 1.25rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+.legend-item-value {
+  font-weight: bold;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  margin-right: 8px;
+}
+
+.current-week {
+  background-color: var(--color-chart-line-current);
+}
+
+.previous-week {
+  background-color: var(--color-chart-line-previous);
+}
+
+.recharts-wrapper {
+  padding: 0 24px 24px 0;
+}
+
+.recharts-tooltip-wrapper {
+  border-radius: 12px !important;
+  background-color: var(--color-surface) !important;
+  box-shadow: var(--color-box-shadow) !important;
+  border: none !important;
+}
+
+.recharts-tooltip-label {
+  font-weight: 600 !important;
+  color: var(--color-text-primary) !important;
+}
+
+.recharts-tooltip-item-list {
+  padding-top: 8px;
+}
+
+.recharts-tooltip-item {
+  color: var(--color-text-tertiary) !important;
+  font-weight: 500 !important;
+}
+
+.recharts-wrapper .recharts-cartesian-axis-tick-value {
+  font-size: var(--font-size-sm);
+  fill: var(--color-text-secondary);
+}
+
+.recharts-wrapper .recharts-cartesian-axis-line {
+  stroke: var(--color-text-secondary);
+}
+
+.custom-tooltip {
+  background-color: var(--color-surface);
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-sm);
+  box-shadow: var(--color-box-shadow);
+}
+
+.custom-tooltip p {
+  margin: 4px 0 0;
+}
+
+.custom-tooltip .label {
+  font-weight: bold;
+  margin: 0;
+}

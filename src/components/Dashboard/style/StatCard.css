@@ -1,0 +1,64 @@
+/* StatCard.css */
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.stat-card-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.stat-card-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.stat-card-change {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.change-positive {
+  color: var(--color-change-positive);
+}
+
+.change-negative {
+  color: var(--color-change-negative);
+}
+
+.change-icon {
+  font-size: 14px;
+}
+
+.stat-card-light {
+  background-color: #e3f5ff;
+}
+
+.stat-card-light .stat-card-title,
+.stat-card-light .stat-card-value {
+  color: #272727;
+}
+
+.stat-card-light-2 {
+  background-color: #e5ecf6;
+}
+
+.stat-card-light-2 .stat-card-title,
+.stat-card-light-2 .stat-card-value {
+  color: #272727;
+}

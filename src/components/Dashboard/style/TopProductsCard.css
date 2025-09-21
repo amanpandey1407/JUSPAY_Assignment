@@ -1,0 +1,54 @@
+/* TopProductsCard.css */
+
+.top-products-card {
+}
+
+.chart-title {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.products-table th,
+.products-table td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.products-table thead th {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.products-table tbody td {
+  color: var(--color-text-tertiary);
+  border-bottom: 1px solid var(--color-bg-primary);
+}
+
+.products-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.products-table .text-right {
+  text-align: right;
+}
+
+.products-table tbody tr:hover {
+  background-color: var(--color-bg-primary);
+  transition: background-color 0.2s ease;
+}

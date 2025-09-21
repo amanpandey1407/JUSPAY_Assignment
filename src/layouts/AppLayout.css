@@ -1,0 +1,41 @@
+/* AppLayout.css */
+
+.app-layout {
+  display: grid;
+  grid-template-rows: 100vh;
+  height: 100vh;
+  font-family: Inter, sans-serif;
+  overflow: hidden;
+  transition: grid-template-columns 0.3s ease-in-out;
+}
+
+.app-layout.both-open {
+  grid-template-columns: 240px minmax(940px, 1fr) 280px;
+}
+
+.app-layout.notifications-only-open {
+  grid-template-columns: minmax(940px, 1fr) 280px;
+}
+
+.app-layout.nav-only-open {
+  grid-template-columns: 240px minmax(940px, 1fr);
+}
+
+.app-layout.none-open {
+  grid-template-columns: minmax(940px, 1fr);
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  overflow-y: auto;
+}
+
+.main-section::-webkit-scrollbar {
+  display: none;
+}
+
+.content-area {
+  background-color: var(--color-surface);
+}

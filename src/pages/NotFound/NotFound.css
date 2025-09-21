@@ -1,0 +1,28 @@
+/* NotFound.css */
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.not-found-page h1 {
+  font-size: 5rem;
+  color: #ff5252;
+}
+
+.not-found-page h2 {
+  color: var(--color-text-primary);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.not-found-page p {
+  font-size: 1rem;
+  color: #888;
+}

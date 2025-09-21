@@ -1,0 +1,42 @@
+/* BarChartCard.css */
+.chart-title {
+  font-size: var(--font-size-md);
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  padding: 24px;
+}
+
+.recharts-wrapper {
+  padding: 0 24px 24px 0;
+}
+
+.recharts-tooltip-wrapper {
+  border-radius: 12px !important;
+  background-color: var(--color-surface) !important;
+  box-shadow: var(--color-box-shadow) !important;
+  border: none !important;
+}
+
+.recharts-tooltip-label {
+  font-weight: 600 !important;
+  color: var(--color-text-primary) !important;
+}
+
+.recharts-tooltip-item-list {
+  padding-top: 8px;
+}
+
+.recharts-tooltip-item {
+  color: var(--color-text-tertiary) !important;
+  font-weight: 500 !important;
+}
+
+.recharts-wrapper .recharts-cartesian-axis-tick-value {
+  font-size: var(--font-size-sm);
+  fill: var(--color-text-secondary);
+}
+
+.recharts-wrapper .recharts-cartesian-axis-line {
+  stroke: var(--color-text-secondary);
+}
