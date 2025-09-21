@@ -17,9 +17,10 @@
   align-items: center;
   padding: 0 24px;
   margin-bottom: 20px;
+  height: 150px;
 }
 
-.world-map-image-container img {
+.world-map-image-container svg {
   max-width: 100%;
   height: auto;
   display: block;
@@ -51,4 +52,15 @@
 .location-value {
   font-weight: 600;
   color: var(--color-text-primary);
+}
+
+.location-marker circle {
+  fill: var(--color-text-primary);
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.world-map-image-container .map-geographies {
+  fill: var(--color-text-secondary);
+  stroke: var(--color-text-secondary);
 }

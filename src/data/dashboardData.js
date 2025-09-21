@@ -42,12 +42,11 @@ export const TOP_PRODUCTS = [
 ];
 
 export const LOCATION_DATA = [
-  { city: "New York", value: 72 },
-  { city: "San Francisco", value: 39 },
-  { city: "Sydney", value: 25 },
-  { city: "Singapore", value: 61 },
+  { city: "New York", value: 72, coordinates: [-74.006, 40.7128] },
+  { city: "San Francisco", value: 39, coordinates: [-122.4194, 37.7749] },
+  { city: "Sydney", value: 25, coordinates: [151.2093, -33.8688] },
+  { city: "Singapore", value: 61, coordinates: [103.8198, 1.3521] },
 ];
-
 export const COLORS = [
   "#2D3748",
   "#C6F6D5",
